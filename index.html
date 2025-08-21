@@ -9,19 +9,7 @@
   
 </head>
 <body>
-  <!-- ====== Cabeçalho / Navegação ====== -->
-  <header>
-    <nav>
-      <h1>Conexão Voluntária</h1>
-      <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#ods17">ODS 17</a></li>
-        <li><a href="#oportunidades">Oportunidades</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#quiz">Quiz</a></li>
-      </ul>
-    </nav>
-  </header>
+
 
   <!-- ====== Home ====== -->
   <section id="home">
@@ -33,21 +21,23 @@
       <h3>Contagem Regressiva:</h3>
       <p id="countdown">Carregando...</p>
     </div>
+  </section>
+  <div class="sticky-fixado">
     <div class="cards">
       <a href="#ods17" class="card">ODS 17 e Voluntariado</a>
       <a href="#oportunidades" class="card">Oportunidades</a>
       <a href="#galeria" class="card">Galeria de Impacto</a>
       <a href="#quiz" class="card">Quiz Interativo</a>
     </div>
-  </section>
-
+  </div>
+  
   <!-- ====== ODS 17 ====== -->
   <section id="ods17">
     <h2>ODS 17 e Voluntariado</h2>
     <p>O ODS 17 destaca a importância das parcerias para alcançar os Objetivos de Desenvolvimento Sustentável. 
        O voluntariado é uma forma prática de unir esforços e criar um impacto positivo.</p>
     <div class="infografico">
-      <img src="imgs/ods17.png" alt="ODS 17 - Parcerias para os Objetivos">
+      <img src="imgs/ods17.jpeg" alt="ODS 17 - Parcerias para os Objetivos">
     </div>
   </section>
 
@@ -76,7 +66,7 @@
     <div class="galeria">
       <figure>
         <img src="imgs/voluntario1.jpeg" alt="Voluntário ajudando em projeto social">
-        <figcaption>"Participar mudou minha vida!"</figcaption>
+        <figcaption>"Participar mudou a minha!"</figcaption>
       </figure>
       <figure>
         <img src="imgs/voluntario2.jpeg" alt="Grupo de voluntários">
@@ -92,8 +82,37 @@
     <div id="quiz-container">
       <p id="pergunta"></p>
       <div id="opcoes"></div>
-      <button id="proxima">Próxima</button>
-      <p id="resultado"></p>
+      <button id="btn btn-link" data-toggle="collapse" data-target="#quizdefato">Iniciar o QUIZ</button>
+      <p id="quizdefato">
+
+      <p>1. A ODS trata, entre outros temas, de...</p>
+      <select id="q1">
+        <option value="a">Aumento dos subsídios ao agronegócio</option>
+        <option value="b">Melhorar de forma significativa a interconectividade entre países e suas culturas</option>
+        <option value="d">Melhorar o acesso à internet e tecnologia em países em desenvolvimento</option>
+        <option value="c">Reduzir latência comercial a fim de maximizar os ganhos muita das vezes evitado pelas corporações</option>
+        <option value="nada" selected>--Escolha uma opção--</option>
+      </select>
+      <p>2. Qual é o principal objetivo da 17ª ODS da ONU?</p>
+      <select id="q2">
+        <option value="a">Erradicar a pobreza extrema do mundo</option>
+        <option value="b">Garantir educação de qualidade e igualitária a todos</option>
+        <option value="c">Fortalecer os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável</option>
+        <option value="d">Visa proteger os oceanos através da parceria global e conscientização da população</option>
+        <option value="nada" selected>--Escolha uma opção--</option>
+      </select>
+      <p>3. A ODS 17 reconhece a importância das parcerias globais para alcançar
+         os demais Objetivos de Desenvolvimento Sustentável. Nesse contexto, 
+        qual das alternativas a seguir representa um dos principais meios propostos por essa meta para
+         fortalecer a cooperação internacional?</p>
+      <select id="q3" >
+        <option value="a">Reduzir a dependência de tecnologias estrangeiras e priorizar soluções exclusivamente nacionais</option>
+        <option value="b">Estabelecer barreiras comerciais para proteger os mercados internos de países em desenvolvimento</option>
+        <option value="c">Mobilizar recursos financeiros, tecnológicos e capacitações por meio de parcerias multilaterais entre países, setor privado e organizações internacionais</option>
+        <option value="nada" selected>--Escolha uma opção--</option>
+      </select>
+
+      </p>
     </div>
   </section>
 
