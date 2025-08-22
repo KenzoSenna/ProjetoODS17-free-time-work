@@ -1,0 +1,33 @@
+lê lá o powershell zé
+<< Kenzo will make this >>
+
+Um banner principal de grande impacto sobre o Dia do Voluntariado.
+Uma contagem regressiva em JavaScript para o dia 28 de agosto.
+Chamadas visuais (cards) para as outras seções do site.
+
+<<                      >>
+
+<< Kenzo will make this >>
+
+O quiz deve ser desenvolvido sem necessáriamente possuir
+uma lógica de banco de dados por trás. Uma simples validação de resposta 
+deve ser o suficiente.
+
+(
+    Possíveis adicionais: 
+1 - Tela de progessão do quiz
+2 = Tela de porcentagem de acertos
+
+)
+
+<<                         >>
+
+
+PREFERÊNCIAS DA PÁGINA:
+
+Alinhar todos os componentes no meio da página (exceções para estética da página)
+
+Criar uma div pra armazenar essas duas imagens e torna-las do mesmo tamanho,
+provavelmente separando elas grid, onde cada uma fica em um bloco ocupando o mesmo tanto de tela
+
+ah, o pedro é tchola

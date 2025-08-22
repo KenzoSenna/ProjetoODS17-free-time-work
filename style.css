@@ -1,14 +1,32 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, Helvetica, sans-serif;
   background: #f8f9fa;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 section{
   overflow: visible;
+  padding: 60px 20px;
 }
+
+section h2,
+.banner,
+.cards,
+#quiz {
+  text-align: center;
+}
+
+/* joga da */
 
 /* ===== Banner ===== */
 .banner {
+  
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('imgs/') center/cover;
   color: #fff;
   text-align: center;
@@ -28,12 +46,17 @@ section{
 }
 
 /* ===== Cards ===== */
+#fundocard{
+  border: none;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   margin: 40px auto;
   max-width: 1000px;
+  
 }
 
 .cards a {
@@ -46,27 +69,30 @@ section{
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   font-weight: bold;
-  transition: 0.3s;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 .cards a:hover,
 .cards a:focus {
   background: #0d6efd;
   color: #fff;
   transform: scale(1.05);
   outline: none;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 .sticky-fixado{
   
-    position: sticky;
-    top: 10px;
-    left: 0px;
-    width: 100%;
-    z-index: 1050;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    height: 110px;
-    
-
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.95); 
+  border-bottom: 1px solid #eaeaea;
 }
+
 
 
 /* === Galeria === */
@@ -89,23 +115,95 @@ section{
 
 .galeria img {
   width: 100%;
-  height: 250px;
-  object-fit: cover; 
-  border-radius: 8px;
-  transition: 0.3s;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
 }
 
 .galeria img:hover {
   transform: scale(1.05);
 }
 
+/* === Quiz === */
+
+#quiz strong{
+    font-size: 27px;
+    
+}
+
+#botao-quiz {
+  text-align: center;
+  display: block;      
+  margin: 10px auto;   
+}
+
+#quiz h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+#quiz p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+#botao-quiz{
+  background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+  border: none;
+  font-weight: bold;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+  margin: 0 auto 40px auto; 
+  text-align: center;
+}
+
+#quiz h2 {
+  font-size: 2.2rem;  
+  font-weight: bold;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+#quiz p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+#botao-quiz:hover{
+  background: linear-gradient(135deg, #198754, #157347);
+  transform: scale(1.15);
+  /* deixa numa cor de verdade,  👌 não me xinga*/
+  /* tem que comer muito arroz e feijão pra ser front-end de verdade predo a
+    ainda bem que eu não como 🙏
+  😶‍🌫️😶‍🌫️😶‍🌫️*/
+  /* quem come é o eduardo laele */
+  
+
+
+
+select{
+  width: 100%;
+  max-width: 650px;
+}
 /* ===== Footer ===== */
 footer {
   background: #0d6efd;
   color: #fff;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 25px 15px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
 }
 
-
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr; 
+  }
+}}
